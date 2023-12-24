@@ -18,13 +18,13 @@ export class HomeController {
         copyToClipBoard: this.copyToClipBoard.bind(this),
       },
     };
+    this.toast = new ToastComponent();
     this.view = new HomeView(container);
   }
 
   public render(): void {
     console.log("Home Screen Loaded");
     this.view.render(this.model);
-    this.toast = new ToastComponent();
   }
 
   public copyToClipBoard(): void {
