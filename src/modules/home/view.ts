@@ -25,6 +25,7 @@ export class HomeView {
 
     this.container.innerHTML = baseTemplate(/*html*/ `
     <main class="container">   
+      <h1 class="title">Gerador de CPF</h1>
       ${this.input.render({
         id: "cpf_input",
         value: cpf,

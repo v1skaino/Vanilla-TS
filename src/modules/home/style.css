@@ -8,3 +8,7 @@
   align-items: center;
   background-color: var(--black-200);
 }
+
+.title {
+  color: var(--white);
+}
