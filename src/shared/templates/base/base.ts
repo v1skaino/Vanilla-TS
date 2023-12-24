@@ -7,6 +7,7 @@ export const baseTemplate = (content: string) => /*html*/ `
     <title>Generator</title>
   </head>
   <body>
+    <div id="toastContainer"></div>
     ${content}
   </body>
   </html>

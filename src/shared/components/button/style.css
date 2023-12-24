@@ -1,0 +1,15 @@
+.btn_primary {
+  background-color: var(--black-300);
+  border: 2px solid var(--black-400);
+  color: var(--white);
+  padding: 10px;
+  min-width: 200px;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn_primary:hover {
+  background-color: var(--black-400);
+  border: 2px solid var(--black-400);
+}

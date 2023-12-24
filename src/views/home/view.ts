@@ -1,4 +1,5 @@
 import copy_paste_icon from "../../shared/assets/icon_copy_paste.png";
+import { ButtonComponent } from "../../shared/components/button/button";
 import { InputComponent } from "../../shared/components/input/input";
 import { baseTemplate } from "../../shared/templates/base/base";
 import { setupClickListener } from "../../shared/utils/setupListeners";
@@ -7,6 +8,7 @@ import "./style.css";
 export class HomeView {
   private container: HTMLElement;
   private input: InputComponent = new InputComponent();
+  private button: ButtonComponent = new ButtonComponent();
 
   constructor(container: HTMLElement) {
     this.container = container;
@@ -14,21 +16,25 @@ export class HomeView {
 
   setupEvents(methods: HomeModel["methods"]): void {
     const setup = this.container;
-    setupClickListener(setup, "updateUserNameBtn", methods.updateUserName);
-    setupClickListener(setup, "cpf_input_icon", methods.updateUserName);
+    setupClickListener(setup, "generateCPF_btn", methods.generateCpf);
+    setupClickListener(setup, "cpf_input_icon", methods.copyToClipBoard);
   }
 
   render({ state, methods }: HomeModel): void {
-    const { user } = state;
+    const { cpf } = state;
 
     this.container.innerHTML = baseTemplate(/*html*/ `
     <main class="container">   
       ${this.input.render({
         id: "cpf_input",
-        value: user.name,
+        value: cpf,
         icon: copy_paste_icon,
+        readonly: true,
       })}
-      <button id="updateUserNameBtn">Update User Name</button>
+     ${this.button.render({
+       id: "generateCPF_btn",
+       label: "Gerar CPF",
+     })}
     </main>
   `);
 

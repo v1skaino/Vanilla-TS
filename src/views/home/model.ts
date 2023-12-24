@@ -1,12 +1,10 @@
 type HomeModel = {
   state: {
-    user: {
-      name: string;
-      email: string;
-    };
+    cpf: string;
   };
   methods: {
-    updateUserName: () => void;
+    generateCpf: () => void;
+    copyToClipBoard: () => void;
   };
 };
 

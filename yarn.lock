@@ -216,6 +216,11 @@ fsevents@~2.3.2, fsevents@~2.3.3:
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.3.tgz#cac6407785d03675a2a5e1a5305c697b347d90d6"
   integrity sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==
 
+gerador-validador-cpf@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/gerador-validador-cpf/-/gerador-validador-cpf-5.0.2.tgz#281f630f274fc8453b6e23a5cb557675cf475ec7"
+  integrity sha512-7nqJilkfIv3HIbB50uP32SOxe/A3TyvVS3AXxwU6cqHq7jMTnkp0WGPaGytY3Yc36RjzysVQ6xhlwcCt70CnOw==
+
 nanoid@^3.3.7:
   version "3.3.7"
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.7.tgz#d0c301a691bc8d54efa0a2226ccf3fe2fd656bd8"

@@ -12,5 +12,7 @@
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gerador-validador-cpf": "^5.0.2"
+  }
 }

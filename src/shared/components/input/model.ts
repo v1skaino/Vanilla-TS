@@ -4,4 +4,5 @@ interface InputComponentProps {
   icon?: string;
   value: string;
   placeholder?: string;
+  readonly?: boolean;
 }
