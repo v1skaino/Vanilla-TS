@@ -13,6 +13,7 @@ export class Router {
     const controller = this.controllers[path as RouterModel];
 
     if (!controller) {
+      if (path === "/") return this.navigateToPath("/home");
       return console.error(`Controller not found for path: ${path}`);
     }
 

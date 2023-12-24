@@ -26,7 +26,6 @@ export class HomeView {
       <button id="updateUserNameBtn">Update User Name</button>
     </main>
     <footer>
-      <!-- Rodapé comum a todas as páginas -->
     </footer>
   `);
 
