@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --white: #ffffff;
+  --black-200: #2c2c2c;
+  --black-300: #292828;
+  --black-400: #1f1f1f;
+}

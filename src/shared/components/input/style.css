@@ -1,0 +1,37 @@
+.input_wrapper input {
+  background: transparent;
+  border: 0;
+  color: var(--white);
+  width: 100%;
+  font-size: 1.3rem;
+}
+
+.input_wrapper input:focus {
+  outline: none;
+  border: transparent;
+}
+
+.input_wrapper label {
+  font-size: 1.3rem;
+  color: var(--white);
+}
+
+.input_wrapper_row {
+  display: flex;
+  gap: 5px;
+  background-color: var(--black-300);
+  color: var(--white);
+  border: 2px solid var(--black-400);
+  padding: 14px;
+  border-radius: 8px;
+  width: 300px;
+}
+
+.input_wrapper_row img {
+  height: 30px;
+  cursor: pointer;
+}
+
+.input_wrapper_row img:hover {
+  opacity: 0.4;
+}

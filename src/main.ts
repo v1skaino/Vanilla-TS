@@ -1,4 +1,5 @@
 import { Router } from "./shared/routes/routes";
+import "./shared/theme/global.style.css";
 import {
   setupContentLoadedListener,
   setupPopStateListener,
