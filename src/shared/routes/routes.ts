@@ -1,4 +1,4 @@
-import { HomeController } from "../../views/home/controller";
+import { HomeController } from "../../modules/home/controller";
 
 export class Router {
   private controllers: Record<RouterModel, any>;
